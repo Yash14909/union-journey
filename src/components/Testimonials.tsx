@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect, useRef } from 'react';
 import { Card } from '@/components/ui/card';
 import { ArrowLeft, ArrowRight, Heart } from 'lucide-react';
@@ -8,7 +7,7 @@ const testimonials = [
   {
     id: 1,
     couple: 'Priya & Rahul',
-    story: 'We matched on this platform in 2021 and instantly connected. After six months of getting to know each other, we knew we were meant to be. Now we're happily married and building our life together.',
+    story: "We matched on this platform in 2021 and instantly connected. After six months of getting to know each other, we knew we were meant to be. Now we're happily married and building our life together.",
     image: 'https://images.unsplash.com/photo-1516589091380-5d8e87df6999?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80',
     date: 'Married: June 2022',
   },
@@ -22,7 +21,7 @@ const testimonials = [
   {
     id: 3,
     couple: 'Mei & James',
-    story: 'We were both skeptical about online matchmaking until we found each other. The compatibility matching was spot on! After our first date, we knew this was something special. We're now planning our wedding.',
+    story: "We were both skeptical about online matchmaking until we found each other. The compatibility matching was spot on! After our first date, we knew this was something special. We're now planning our wedding.",
     image: 'https://images.unsplash.com/photo-1545232979-8bf68ee9b1af?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80',
     date: 'Engaged: December 2022',
   },
@@ -40,7 +39,6 @@ const Testimonials = () => {
   const [isAnimating, setIsAnimating] = useState(false);
   const testimonialRef = useRef<HTMLDivElement>(null);
 
-  // Handle next testimonial
   const handleNext = () => {
     if (isAnimating) return;
     
@@ -52,7 +50,6 @@ const Testimonials = () => {
     }, 500);
   };
 
-  // Handle previous testimonial
   const handlePrev = () => {
     if (isAnimating) return;
     
@@ -64,7 +61,6 @@ const Testimonials = () => {
     }, 500);
   };
 
-  // Auto-rotate testimonials
   useEffect(() => {
     const interval = setInterval(() => {
       handleNext();
@@ -130,7 +126,6 @@ const Testimonials = () => {
             </div>
           </div>
           
-          {/* Navigation Controls */}
           <div className="flex justify-center mt-8 gap-4">
             <Button 
               variant="outline" 
