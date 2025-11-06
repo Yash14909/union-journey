@@ -1,4 +1,4 @@
-# Welcome to my project
+# Welcome to this repo
 
 ## Project info : 
 
